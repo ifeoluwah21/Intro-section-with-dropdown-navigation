@@ -1,1 +1,175 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: hsl(0deg, 0%, 98%);
+  font-family: "Epilogue", sans-serif;
+}
+
+.header {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__nav {
+  margin-right: -100%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow-y: scroll;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+.header__menu {
+  position: relative;
+  z-index: 5;
+}
+
+.nav.show {
+  margin-right: 0;
+}
+.nav__item {
+  list-style: none;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  border-radius: 10px;
+  color: hsl(0deg, 0%, 41%);
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  cursor: pointer;
+}
+.nav__item > span {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  padding-left: 1rem;
+  transform: translate(-250%, -50%);
+}
+.nav__item > a {
+  text-decoration: none;
+  color: inherit;
+}
+.nav__item:hover {
+  color: hsl(0deg, 0%, 8%);
+}
+.nav__item:hover > .sub-list {
+  display: block;
+}
+.nav__item > .sub-list {
+  display: none;
+  margin: 1rem 0.5rem;
+}
+.nav__sub-item {
+  padding: 0.5rem 0.5rem;
+  list-style: none;
+}
+.nav__sub-item > a {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 41%);
+  padding-left: 0.5rem;
+}
+.nav__wrapper {
+  width: 50%;
+  margin-left: auto;
+  min-height: 100%;
+  background-color: #fff;
+  padding: 5rem 0 2rem;
+}
+
+.check-in {
+  text-align: center;
+  margin: 2rem 1.5rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.check-in__login {
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+.check-in__login:hover a {
+  color: hsl(0deg, 0%, 8%);
+}
+.check-in__login a {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 41%);
+}
+.check-in__register {
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  border: 2px solid hsl(0deg, 0%, 8%);
+  color: hsl(0deg, 0%, 41%);
+  background: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.check-in__register:hover {
+  color: hsl(0deg, 0%, 8%);
+}
+
+.hero {
+  width: 100%;
+}
+.hero__img-block {
+  width: 100%;
+}
+.hero__img-block img {
+  width: 100%;
+}
+
+.about {
+  width: 90%;
+  max-width: 400px;
+  margin: 1.5rem auto;
+}
+.about__title {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+.about__text {
+  text-align: justify;
+  padding: 0.5rem 0 1rem;
+  line-height: 1.5;
+}
+.about__btn {
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  border-radius: 20px;
+  border: none;
+  background-color: hsl(0deg, 0%, 8%);
+  color: hsl(0deg, 0%, 98%);
+  font-size: 1rem;
+  position: relative;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: color 0.1s, border 0.3s, background-color 0.2s ease;
+}
+.about__btn:hover {
+  background-color: hsl(0deg, 0%, 98%);
+  color: hsl(0deg, 0%, 8%);
+  border: 1px solid hsl(0deg, 0%, 8%);
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer__logo img {
+  width: 5rem;
+}/*# sourceMappingURL=style.css.map */

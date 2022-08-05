@@ -5,59 +5,86 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./css/style.css" type="text/stylesheet">
+
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <div>
-        <img src="./images/logo.svg" alt="logo">
-      </div>
-      <ul>
-        <li>Features<span><img src="./images/icon-arrow-down.svg" alt="arrow-down"></span></li>
-        <li>Company<span><img src="./images/icon-arrow-down.svg" alt="arrow-down"></span></li>
-        <liCareers>
+  <header class="header">
+    <div class="header__logo">
+      <img src="./images/logo.svg" alt="logo">
+    </div>
+    <nav class="header__nav nav">
+      <div class="nav__wrapper">
+        <ul class="nav__list">
+          <li class="nav__item">Features<span><img src="./images/icon-arrow-down.svg" alt="arrow-down"></span>
+            <ul class="nav__sub-list sub-list">
+              <li class="nav__sub-item"><span><img src="./images/icon-todo.svg" alt="todo icon"></span><a href="#"
+                  title="todo">Todo List</a>
+              </li>
+              <li class="nav__sub-item"><span><img src="./images/icon-calendar.svg" alt="icon-calendar"></span><a
+                  href="#" title="calender">Calender</a></li>
+              <li class="nav__sub-item"><span><img src="./images/icon-reminders.svg" alt="icon-reminders"></span><a
+                  href="#" title="reminder">Reminders</a></li>
+              <li class="nav__sub-item"><span><img src="./images/icon-planning.svg" alt="icon-planning"></span><a
+                  href="#" title="Planning">Planning</a></li>
+            </ul>
           </li>
-          <li>About</li>
-      </ul>
-      <div>
-        <p><a href="#">Login</a></p>
-        <button><span>Register</span></button>
+          <li class="nav__item">Company<span><img src="./images/icon-arrow-down.svg" alt="arrow-down"></span>
+            <ul class="nav__sub-list sub-list">
+              <li class="nav__sub-item"><a href="#" title="history">History</a></li>
+              <li class="nav__sub-item"><a href="#" title="our team">Our Team</a></li>
+              <li class="nav__sub-item"><a href="#" title="blog">Blog</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a href="#" title="careers">Careers</a></li>
+          <li class="nav__item"><a href="#" title="about">About</a></li>
+        </ul>
+        <div class="check-in">
+          <p class="check-in__login"><a href="#">Login</a></p>
+          <button class="check-in__register"><span>Register</span></button>
+        </div>
       </div>
     </nav>
-    <div>
+    <div class="header__menu">
       <img src="./images/icon-menu.svg" alt="menu">
     </div>
   </header>
-  <main>
-    <aside>
-      <div>
-        <picture>
+  <main class="main">
+    <aside class="hero">
+      <div class="hero__img-block">
+        <picture class="hero__img">
           <source media="(max-width:560px)" srcset="./images/image-hero-mobile.png">
           <source media="(min-width:900px)" srcset="./images/image-hero-desktop.png">
           <img src="./images/image-hero-mobile.png" alt="">
         </picture>
       </div>
     </aside>
-    <section>
-      <h1>Make remote work</h1>
-      <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch
+    <article class="about">
+      <h1 class="about__title">Make remote work</h1>
+      <p class="about__text">Get your team in sync, no matter your location. Streamline processes, create team rituals,
+        and watch
         productivity soar.</p>
-      <button type="button"><span>Learn more</span></button>
-    </section>
+      <button class="about__btn" type="button"><span>Learn more</span></button>
+    </article>
   </main>
-  <footer>
-    <div>
+  <footer class="footer">
+    <div class="footer__logo">
       <img src="./images/client-databiz.svg" alt="client-databiz">
+    </div>
+    <div class="footer__logo">
       <img src="./images/client-audiophile.svg" alt="client-audiophile">
+    </div>
+    <div class="footer__logo">
       <img src="./images/client-meet.svg" alt="client-meet">
+    </div>
+    <div class="footer__logo">
       <img src="./images/client-maker.svg" alt="client-maker">
     </div>
   </footer>
+  <script src="./app.js"></script>
 </body>
 
 </html>
