@@ -75,4 +75,4 @@ I want to look into displaying responsive image using html.
 ## Author
 
 - Frontend Mentor - [@ifeoluwah21](https://www.frontendmentor.io/profile/ifeoluwah21)
-- Twitter - [@_ifeoluwaaa_](https://www.twitter.com/_ifeoluwaaa_)
+- Twitter - [@_ifeoluwaaa_](https://www.twitter.com/_ifeoluwaaa)
