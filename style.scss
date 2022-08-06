@@ -194,7 +194,7 @@ body {
 @media screen and (min-width: 900px) {
   body {
     display: grid;
-    grid: repeat(13, 5vw) / repeat(20, 5vw);
+    grid: repeat(13, 5vmax) / repeat(20, 5vmax);
   }
   .header {
     grid-column: 1/21;
