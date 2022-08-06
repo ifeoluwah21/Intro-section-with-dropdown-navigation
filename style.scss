@@ -274,11 +274,11 @@ body {
 
     &__list {
       display: flex;
-      width: 70%;
+      width: 55%;
     }
     &__sub-list {
       position: absolute;
-      width: 100%;
+      width: 10rem;
       background-color: #fff;
     }
 
@@ -290,7 +290,7 @@ body {
   .check-in {
     margin: 0;
     flex-flow: row;
-    width: 25%;
+    width: 20%;
     align-items: center;
 
     &__login {
